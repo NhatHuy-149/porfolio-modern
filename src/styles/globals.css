@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* === Primary Colors === */
+    --primary: #fec544; /* Main brand color (button, links, highlight) */
+    --primary-foreground: #070d1b; /* Text on primary background */
+
+    --secondary: #a9adb8; 
+    --tertiary: #fdfeff; 
+
+
+    /* === Background Colors === */
+    --background: #0a101e;            /* Page background */
+    --background-subtle: #f6f6f6;     /* Section background */
+    --background-highlight: #e3fcff;  /* Special highlight (e.g. oval) */
+
+    /* === Border Colors === */
+    --border: #232935;          /* Main borders (e.g. card, section) */
+    --border-subtle: #232935;       /* Subtle borders (e.g. input fields) */ 
+
+    /* === Radius === */
+    --radius-sm: 4px; 
+    --radius-md: 8px;
+    --radius-lg: 16px;
+
+    --shadow:0px 5px 10px 0px #fec64450; /* Main shadow */
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-primary;
+  }
+}
+
+.spacing-x-container {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.max-w-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1366.1px) {
+  .spacing-x-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 1200.1px) {
+  .spacing-x-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }  
+  .max-w-container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 1024.1px) {
+  .spacing-x-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 991.1px) {
+  .spacing-x-container {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+@media (max-width: 768.1px) {
+  .spacing-x-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 576.1px) {
+  .spacing-x-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background;
+    
+  }
+}

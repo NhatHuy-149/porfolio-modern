@@ -1,0 +1,22 @@
+{
+  "header": {
+    "about_us": "Về chúng tôi",
+    "games": "Trò chơi",
+    "partners": "Đối tác",
+    "contact_us": "Liên hệ",
+    "vietnamese": "Tiếng Việt",
+    "english": "Tiếng Anh"
+  },
+
+  "footer": {
+    "address": "Địa chỉ",
+    "subscribe": "Theo dõi",
+    "subscribe_to_our": "Đăng ký nhận bản tin của chúng tôi và là người đầu tiên biết về các cập nhật của chúng tôi",
+    "enter_your_email": "Email",
+    "valletta": "Valletta Buildings, South Street, Valletta - VLT 1103 Malta, Mỹ",
+    "20_phan_dang_luu": "Số 20 đường Phan Đăng Lưu, quận Hải Châu, thành phố Đà Nẵng, Việt Nam",
+    "tele_phone": "(+1) 555-0108-000 hoặc (+236) 555-0108"
+  },
+
+  "copryright": "2017 Copyright. Policy."
+}
