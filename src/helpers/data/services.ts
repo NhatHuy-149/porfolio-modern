@@ -1,5 +1,5 @@
 import icSketches from "../../../public/icons/services/ic-sketches.svg"
-import icUiuxdesign from "../../../public/icons/services/ic-uiuxdesign.svg"
+import icUiuxdesign from "../../../public/icons/services/ic-uiuxDesign.svg"
 import icProductDesign from "../../../public/icons/services/ic-productDesign.svg"
 import icMotionGraphics from "../../../public/icons/services/ic-motionGraphics.svg"
 import icAppDesign from "../../../public/icons/services/ic-appDesign.svg"

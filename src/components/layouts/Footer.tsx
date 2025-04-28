@@ -1,10 +1,6 @@
 import React from "react";
-import { useTranslation } from "next-i18next";
-
-
 
 function Footer() {
-  const { t } = useTranslation("common");
 
   function handleRedirectSocial(href: string) {
     window.open(href, "_blank");
