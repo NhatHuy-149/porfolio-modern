@@ -1,9 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-
 import { Typography } from "../ui/typography";
-
 import Header from "./Header";
 import Footer from "./Footer";
 import { BackToTop } from "../ui/back-to-top";

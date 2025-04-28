@@ -5,7 +5,7 @@ import Image, { StaticImageData } from "next/image";
 import { useRouter } from "next/router";
 import { cn } from "@/lib/utils";
 import { languagesOptionsInterface } from "@/models/header.model";
-import { headerMenus, languagesOptions } from "@/helpers/data/header";
+import { headerMenus } from "@/helpers/data/header";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -30,7 +30,6 @@ function Header() {
   const [isOpenMenuMobile, setIsOpenMenuMobile] = useState<boolean>(false);
   const activeSection = useActiveSection([...headerMenus?.map((menu) => menu?.key)]);
 
-  const tempFlag = languagesOptions?.find((lang) => lang?.value === locale);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,28 +46,7 @@ function Header() {
     };
   }, []);
 
-  const renderFlag = useMemo(() => {
-    return (
-      <div className='flex items-center gap-2 py-1'>
-        <Image
-          src={tempFlag?.flag as StaticImageData}
-          alt={`flag-${tempFlag?.label}`}
-        />
-        <ReactSVG
-          src={iconArrow?.src}
-          className={cn(
-            "[&_svg]:w-[10px] [&_svg]:h-[5px]",
-            `rotate-180 transition-transform duration-300`,
-            isOpenLang && "rotate-0",
-            isScrolled
-              ? "[&_svg]:text-primary"
-              : "[&_svg]:text-primary-foreground",
-            isOpenMenuMobile && "[&_svg]:text-primary"
-          )}
-        />
-      </div>
-    );
-  }, [locale, isOpenLang, isScrolled]);
+
 
   function handleOpenChangLang(value: boolean) {
     setIsOpenLang(value);
@@ -198,70 +176,7 @@ function Header() {
               )}
             >
               <div className={cn("flex justify-between items-center")}>
-                <DropdownMenu
-                  onOpenChange={handleOpenChangLang}
-                  open={isOpenLang}
-                >
-                  <DropdownMenuTrigger className='border focus:outline-none border-border-foreground px-3 rounded-lg bg-background-partners'>
-                    <div className='flex items-center gap-2 py-1'>
-                      <Image
-                        src={tempFlag?.flag as StaticImageData}
-                        alt={`flag-${tempFlag?.label}`}
-                      />
-                      <ReactSVG
-                        src={iconArrow?.src}
-                        className={cn(
-                          "[&_svg]:w-[10px] [&_svg]:h-[5px]",
-                          `rotate-180 transition-transform duration-300`,
-                          isOpenLang && "rotate-0",
-
-                          isOpenMenuMobile && "[&_svg]:text-primary"
-                        )}
-                      />
-                    </div>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent
-                    className={cn(
-                      "px-2 py-1 bg-background-partners rounded-lg w-44 z-[9999]"
-                    )}
-                  >
-                    {languagesOptions?.map(
-                      (language: languagesOptionsInterface, index: number) => (
-                        <DropdownMenuLabel
-                          key={language?.key}
-                          className={cn(
-                            "cursor-pointer p-0",
-                            index % 2 === 0 && "border-b border-border"
-                          )}
-                          onClick={() => handleChangeLang(language?.value)}
-                        >
-                          <div className={cn("flex items-center gap-2")}>
-                            {locale === language?.value ? (
-                              <Image
-                                src={iconTicked}
-                                alt='lang active'
-                                className='mr-1'
-                              />
-                            ) : (
-                              <div className='w-6' />
-                            )}
-                            <Image
-                              src={language?.flag}
-                              alt={`flag-${language?.key}`}
-                            />
-                            <Typography
-                              fontWeight='bold'
-                              color='primary'
-                              className='text-[10px] w-[30px] min-w-fit'
-                            >
-                              {language?.label}
-                            </Typography>
-                          </div>
-                        </DropdownMenuLabel>
-                      )
-                    )}
-                  </DropdownMenuContent>
-                </DropdownMenu>
+    
                 <ReactSVG
                   src={closesMenuMobileIcon?.src}
                   className='flex h-10 w-10 transform cursor-pointer text-primary transition duration-300 ease-in-out hover:rotate-90 [&_div]:size-full [&_svg]:size-full'

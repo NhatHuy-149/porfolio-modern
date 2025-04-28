@@ -51,19 +51,6 @@ const headerMenus: HeaderMenusInterface[] = [
   },
 ];
 
-const languagesOptions: languagesOptionsInterface[] = [
-  {
-    key: "vietnamese",
-    label: "vietnamese",
-    value: "vi",
-    flag: iconVietnam,
-  },
-  {
-    key: "english",
-    label: "english",
-    value: "en",
-    flag: iconUnitedKingdom,
-  },
-];
 
-export { headerMenus, languagesOptions };
+
+export { headerMenus };
