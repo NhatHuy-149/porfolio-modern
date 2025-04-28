@@ -1,11 +1,8 @@
 import { PUBLIC_ROUTER } from "@/settings/router";
 import {
   HeaderMenusInterface,
-  languagesOptionsInterface,
 } from "@/models/header.model";
 
-import iconVietnam from "../../../public/icons/layout/ic-vietnam-flag.svg";
-import iconUnitedKingdom from "../../../public/icons/layout/ic-english-flag.svg";
 
 const headerMenus: HeaderMenusInterface[] = [
   {

@@ -2,8 +2,6 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-import iconRight from "../../../public/icons/common/icon-right.svg";
-
 interface InputProps extends React.ComponentProps<"input"> {
   prefixIcon?: React.ReactNode;
   suffixIcon?: React.ReactNode;
