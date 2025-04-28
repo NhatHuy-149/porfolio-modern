@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
 
 import { Typography } from "../ui/typography";
 
@@ -15,15 +14,11 @@ interface IUserLayoutProps {
   title: string | "";
   keywords: string | "";
 }
-
-export default function UserLayout(props: IUserLayoutProps) {
-  const { children, description, title = "Nhat Huy Portfolio", keywords } = props;
-  const { t } = useTranslation("common");
-
+const Layout = ({ children, description, title = "Nhat Huy Portfolio", keywords }: IUserLayoutProps) => {
   const router = useRouter();
 
   return (
-    <section>
+    <div className="min-h-screen flex flex-col">
       <Head>
         <title>{title}</title>
         <meta name='description' content={description} />
@@ -47,12 +42,14 @@ export default function UserLayout(props: IUserLayoutProps) {
         <meta name='twitter:description' content={description} />
       </Head>
       <Header />
-      <main className='min-h-screen'>{children}</main>
+      <main className="flex-grow">{children}</main>
       {/* <BackToTop /> */}
       {/* <Footer /> */}
       <div className='bg-[#0a101e] flex justify-center pt-[30px] pb-7'>
         <Typography variant='h5'>© 2020. Designed by Laralink. All right reserved.</Typography>
       </div>
-    </section>
+    </div>
   );
-}
+};
+
+export default Layout;

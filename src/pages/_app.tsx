@@ -1,7 +1,6 @@
 import { useMemo } from "react";
 import type { AppProps } from "next/app";
 import { usePathname } from "next/navigation";
-import { appWithTranslation } from "next-i18next";
 import UserLayout from "@/components/layouts";
 import "@/styles/globals.css";
 import { Inter,Roboto } from "next/font/google";
@@ -33,5 +32,5 @@ function App({ Component, pageProps }: AppProps) {
     </div>
   );
 }
+export default App;
 
-export default appWithTranslation(App);

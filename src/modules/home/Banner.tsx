@@ -46,9 +46,7 @@ function Banner() {
         <div>
           <motion.div
             className="absolute w-[45%] h-full bottom-0 right-[0] transition-all duration-300"
-            // style={{
-            //   transform: `translateX(${scrollPosition * 0.1 + 30}px)`,
-            // }}
+
             initial={{ opacity: 0, x: 0 }}
             whileInView={{ opacity: 1, x: scrollPosition * 0.1  }}
             viewport={{ once: true }}
@@ -62,9 +60,6 @@ function Banner() {
           </motion.div>
           <motion.div
             className="absolute bottom-0 bg-[#101624] p-3 rounded-l-full border-2 border-[#232935] right-[45%] transition-all duration-300"
-            // style={{
-            //   transform: `translateX(${scrollPosition * 0.1 + 30}px)`,
-            // }}
             initial={{ opacity: 0, x: 0 }}
             whileInView={{ opacity: 1, x: scrollPosition * 0.1  }} 
             viewport={{ once: true }} 

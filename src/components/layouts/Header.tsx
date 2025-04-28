@@ -1,14 +1,11 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { useTranslation } from "next-i18next";
 import { ReactSVG } from "react-svg";
 import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import { useRouter } from "next/router";
-
 import { cn } from "@/lib/utils";
 import { languagesOptionsInterface } from "@/models/header.model";
 import { headerMenus, languagesOptions } from "@/helpers/data/header";
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,7 +14,6 @@ import {
 } from "../ui/dropdown-menu";
 import { Typography } from "../ui/typography";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
-
 import iconArrow from "../../../public/icons/common/ic-down.svg";
 import companyLogo from "../../../public/icons/common/tech-logo.svg";
 import iconTicked from "../../../public/icons/common/ic-ticked.svg";
@@ -26,7 +22,6 @@ import closesMenuMobileIcon from "../../../public/icons/common/ic-close.svg";
 import { useActiveSection } from "@/hooks/useActiveSection";
 
 function Header() {
-  const { t } = useTranslation("common");
   const router = useRouter();
   const locale = router.locale || "en";
 
@@ -129,7 +124,7 @@ function Header() {
                 }
               }}
             >
-              {t(`${menu?.label}`)}
+              {menu?.label}
             </Typography>
           ))}
 
@@ -259,7 +254,7 @@ function Header() {
                               color='primary'
                               className='text-[10px] w-[30px] min-w-fit'
                             >
-                              {t(`header.${language?.label}`)}
+                              {language?.label}
                             </Typography>
                           </div>
                         </DropdownMenuLabel>
@@ -291,7 +286,7 @@ function Header() {
                         }
                       }}
                     >
-                      {t(`${menu?.label}`)}
+                      {menu?.label}
                     </Typography>
                   </div>
                 ))}
