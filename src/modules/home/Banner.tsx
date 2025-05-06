@@ -20,9 +20,9 @@ function Banner() {
   }, [])
 
   return (
-    <div id="home" className="h-[710px] relative overflow-hidden">
+    <div id="home" className="h-[700px] xxlMax:h-[670px]  mdMax:h-[500px] relative overflow-hidden">
       <div className="spacing-x-container flex items-center h-full">
-        <div className="lgMin:w-[50%]  ">
+        <div className="lgMin:w-[50%] mdMax:mt-12">
           <Typography variant={"h3"} color={"primary"} className="mb-[10px]">
             {bannerData.title}
           </Typography>
@@ -30,7 +30,7 @@ function Banner() {
             variant={"h1"}
             color={"tertiary"}
             fontWeight="semibold"
-            className="mb-[24px]"
+            className="mb-[24px] mdMax:text-[72px]"
           >
             {bannerData.name}
           </Typography>
@@ -43,30 +43,27 @@ function Banner() {
             </Button>
           </Link>
         </div>
-        <div>
-          <motion.div
+        <div className="mdMax:hidden">
+          <div
             className="absolute w-[45%] h-full bottom-0 right-[0] transition-all duration-300"
-
-            initial={{ opacity: 0, x: 0 }}
-            whileInView={{ opacity: 1, x: scrollPosition * 0.1  }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            style={{
+              transform: `translateX(${scrollPosition * 0.1}px)`
+            }}
           >
             <Image
               src={avatar}
               alt="avatar1"
-              className="w-full h-full object-cover"
+              className="w-full h-full"
             />
-          </motion.div>
-          <motion.div
+          </div>
+          <div
             className="absolute bottom-0 bg-[#101624] p-3 rounded-l-full border-2 border-[#232935] right-[45%] transition-all duration-300"
-            initial={{ opacity: 0, x: 0 }}
-            whileInView={{ opacity: 1, x: scrollPosition * 0.1  }} 
-            viewport={{ once: true }} 
-            transition={{ duration: 0.5 }}
+            style={{
+              transform: `translateX(${scrollPosition * 0.1}px)`
+            }}
           >
             <SocialMedia />
-          </motion.div>
+          </div>
         </div>
       </div>
       <div className="absolute top-0 left-0 w-full h-full z-[-100]">

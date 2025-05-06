@@ -13,7 +13,7 @@ const aboutMeData: AboutMeInterface = {
     Freelance:"Available",
   },
   buttonText: "Download CV", 
-  buttonLink: "../../../public/images/home/avatar1.jpg",
+  buttonLink: "/CV_Doan_Nhat_Huy_Frontend_Developer.pdf",
 };
 
 

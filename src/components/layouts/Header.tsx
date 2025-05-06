@@ -164,8 +164,7 @@ function Header() {
                 src={iconMenuMobile?.src}
                 onClick={handleToggleMenuMobile}
                 className={cn(
-                  "h-10 w-10 text-primary-foreground [&_svg]:h-10 [&_svg]:w-10",
-                  isScrolled && "text-primary"
+                  "h-10 w-10 text-primary [&_svg]:h-10 [&_svg]:w-10 text-primary"
                 )}
               />
             </DrawerTrigger>
@@ -186,7 +185,7 @@ function Header() {
               <div className='flex flex-col'>
                 {headerMenus?.map((menu) => (
                   <div
-                    className='flex items-center justify-center py-10 border-b border-background-foreground'
+                    className='flex items-center justify-center py-6 border-b border-background-foreground'
                     key={`menu-${menu?.key}`}
                   >
                     <Typography

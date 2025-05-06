@@ -13,16 +13,19 @@ import Blogs from "./Blogs";
 import blogsData from "@/helpers/data/blogs";
 import Contact from "./Contact";
 import contactData from "@/helpers/data/contact";
+import TechStack from "./TechStack";
+import { techStackData } from "@/helpers/data/tech-stack";
 function Home() {
   return (
     <main >
       <Banner />
       <AboutMe data={aboutMeData}/>
-      <Services data={servicesData}/>
-      <Skills />
+      {/* <Services data={servicesData}/> */}
+      <TechStack data={techStackData}/>
+      {/* <Skills /> */}
       <Resume data={resumeData}/>
       <Portfolios  data={portfoliosData}  />
-      <Blogs data={blogsData} />
+      {/* <Blogs data={blogsData} /> */}
       <Contact data={contactData} />
     </main>
   );

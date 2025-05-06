@@ -7,6 +7,7 @@ const PUBLIC_ROUTER = {
   PORTFOLIO: "#portfolio",
   BLOG: "#blog",
   CONTACT: "#contact",
+  TECH_STACK: "#tech-stack",
 };
 
 const PRIVATE_ROUTER = {};

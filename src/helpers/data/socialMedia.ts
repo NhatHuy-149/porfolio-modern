@@ -5,18 +5,18 @@ const socialMedia = [
         icon: "FaFacebook",
         link: "https://www.facebook.com/profile.php?id=61572189030665",
     },
-    {
-        id: 2,
-        name: "Twitter",
-        icon: "FaTwitter",
-        link: "https://x.com/nhathuydoan1409",
-    },
-    {
-        id: 3,
-        name: "Instagram",
-        icon: "FaInstagram",
-        link: "https://www.instagram.com/ltkim.chi/",
-    },
+    // {
+    //     id: 2,
+    //     name: "Twitter",
+    //     icon: "FaTwitter",
+    //     link: "https://x.com/nhathuydoan1409",
+    // },
+    // {
+    //     id: 3,
+    //     name: "Instagram",
+    //     icon: "FaInstagram",
+    //     link: "https://www.instagram.com/ltkim.chi/",
+    // },
     {
         id: 4,
         name: "Linkedin",

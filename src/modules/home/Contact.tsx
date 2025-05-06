@@ -5,23 +5,20 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Typography } from "@/components/ui/typography"
 import SocialMedia from "@/components/layouts/SocialMedia"
-
+import SendMail from "@/components/layouts/SendMail"
 const Contact = ({ data }: { data: any }) => {
+
+
+
   return (
     <div id="contact" className="spacing-x-container">
       <SectionTitle>Contact Me</SectionTitle>
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-2 mdMax:grid-cols-1 gap-10">
         <div>
           <Typography variant="h3" color="tertiary" className="mb-6">
             Just say hello
           </Typography>
-          <form className="flex flex-col gap-4">
-            <Input type="text" placeholder="Name" />
-            <Input type="email" placeholder="Email" />
-            <Input type="subject" placeholder="Subject" />
-            <Textarea placeholder="Message" />
-            <Button>Send Message</Button>
-          </form>
+          <SendMail />
         </div>
         <div>
           <Typography variant="h3" color="tertiary" className="mb-6">
@@ -30,7 +27,7 @@ const Contact = ({ data }: { data: any }) => {
           <div>
             <div className="flex flex-col gap-6">
               <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc */}
               </Typography>
               {data.map((item: any) => (
                 <div key={item.id} className="flex items-center gap-4">
@@ -46,7 +43,7 @@ const Contact = ({ data }: { data: any }) => {
                 </div>
               ))}
               <Typography>
-                Visite my social profile and get connected
+                Visit my social profile and get connected
               </Typography>
               {/* <div className="flex items-center gap-4">
                 <div className="group flex items-center justify-center  w-12 h-12 rounded-full border border-secondary hover:bg-secondary/10 transition-all duration-300 overflow-hidden">

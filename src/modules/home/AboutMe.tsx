@@ -1,6 +1,6 @@
 import SectionTitle from "@/components/layouts/SectionTitle"
 import React from "react"
-import avatar from "../../../public/images/home/avatar1.jpg"
+import avatar from "../../../public/images/home/avatar2.png"
 import Image from "next/image"
 import { Typography } from "@/components/ui/typography"
 import { Button } from "@/components/ui/button"
@@ -12,6 +12,20 @@ interface Props{
 
 function AboutMe({data}:Props) {
     const{greeting,job,introduction,infoDetail,buttonText}=data
+
+    const handleDownload = () => {
+      try {
+        const link = document.createElement('a');
+        link.href = '/CV_Doan_Nhat_Huy_Frontend_Developer.pdf';  // Updated path to use public directory
+        link.download = 'CV_Doan_Nhat_Huy_Frontend_Developer.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch (error) {
+        console.error('Error downloading CV:', error);
+      }
+    };
+
   return (
     <div id="about" className="spacing-x-container">
       <SectionTitle>About me</SectionTitle>
@@ -23,7 +37,7 @@ function AboutMe({data}:Props) {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <Image src={avatar} alt="avatar1" />
+          <Image src={avatar} alt="avatar1" className="transform translate-x-[50px]" />
         </motion.div>
         <div className="xlMin:w-1/2 flex flex-col gap-[18px]">
           <Typography variant={"h2"} color={"tertiary"}>{greeting}</Typography>
@@ -64,14 +78,7 @@ function AboutMe({data}:Props) {
           <Button 
             variant={"default"} 
             className="mt-[40px]" 
-            onClick={() => {
-              const link = document.createElement('a');
-              link.href = data.buttonLink;  
-              link.download = 'CV_Doan_Nhat_Huy_Frontend_Developer.pdf'; 
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
-            }}
+            onClick={handleDownload}
           >
             {buttonText}
           </Button>

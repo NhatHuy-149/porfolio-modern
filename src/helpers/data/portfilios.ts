@@ -8,10 +8,10 @@ import portfolio6 from "../../../public/images/portfolios/portfolio6_lg.jpg"
 export const portfoliosData = [
     {
         id: 1,
-        title: "Product Landing Page",
+        title: "Ecommerce Website",
         image: portfolio1,
         category: "Web Design",
-        link: "#",
+        link: "https://pyramid.tech/",
     },
     {
         id: 2,
@@ -22,31 +22,31 @@ export const portfoliosData = [
     },
     {
         id: 3,
-        title: "Product Landing Page",
+        title: "Dashboard Page",
         image: portfolio3,
         category: "Web Design",
         link: "#",
     },
-    {
-        id: 4,
-        title: "Product Landing Page",
-        image: portfolio4,
-        category: "Web Design",
-        link: "#",
-    },
-    {
-        id: 5,
-        title: "Product Landing Page",
-        image: portfolio5,
-        category: "Web Design",
-        link: "#",
-        },
-    {
-        id: 6,
-        title: "Product Landing Page",
-        image: portfolio6,
-        category: "Web Design",
-        link: "#",
-    },
+    // {
+    //     id: 4,
+    //     title: "Product Landing Page",
+    //     image: portfolio4,
+    //     category: "Web Design",
+    //     link: "#",
+    // },
+    // {
+    //     id: 5,
+    //     title: "Product Landing Page",
+    //     image: portfolio5,
+    //     category: "Web Design",
+    //     link: "#",
+    //     },
+    // {
+    //     id: 6,
+    //     title: "Product Landing Page",
+    //     image: portfolio6,
+    //     category: "Web Design",
+    //     link: "#",
+    // },
 
 ]
