@@ -25,16 +25,22 @@ const Header = () => {
               About
             </Link>
             <Link 
-              href="#services" 
-              className={`hover:text-primary transition-colors ${activeSection === "services" ? "text-primary" : ""}`}
+              href="#resume" 
+              className={`hover:text-primary transition-colors ${activeSection === "resume" ? "text-primary" : ""}`}
             >
-              Services
+              Resume
             </Link>
             <Link 
               href="#portfolio" 
               className={`hover:text-primary transition-colors ${activeSection === "portfolio" ? "text-primary" : ""}`}
             >
               Portfolio
+            </Link>
+            <Link 
+              href="#blogs" 
+              className={`hover:text-primary transition-colors ${activeSection === "blogs" ? "text-primary" : ""}`}
+            >
+              Blog
             </Link>
             <Link 
               href="#contact" 

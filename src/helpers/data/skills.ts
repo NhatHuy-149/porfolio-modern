@@ -1,33 +1,33 @@
 const skillsData = [
   {
     id: 1,
-    name: "HTML",
+    name: "Photoshop",
     percentage: 90,
   },
   {
     id: 2,
-    name: "CSS",
+    name: "Motion Graphics",
     percentage: 80,
   },    
   {
     id: 3,
-    name: "JavaScript",
+    name: "Adobe XD",
     percentage: 70,
   },    
   {
     id: 4,
-    name: "React",
+    name: "Figma",
     percentage: 60,
   },
   {
     id: 5,
-    name: "Next.js",
+    name: "InDesign",
     percentage: 50,
   },
   
   {
-    id: 5,
-    name: "Next.js",
+    id: 6,
+    name: "Illustrator",
     percentage: 50,
   },
   

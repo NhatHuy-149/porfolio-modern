@@ -15,7 +15,7 @@ import {
 import { Typography } from "../ui/typography";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import iconArrow from "../../../public/icons/common/ic-down.svg";
-import companyLogo from "../../../public/icons/common/tech-logo.svg";
+import companyLogo from "../../../public/logo.png";
 import iconTicked from "../../../public/icons/common/ic-ticked.svg";
 import iconMenuMobile from "../../../public/icons/common/ic-mobile-menu.svg";
 import closesMenuMobileIcon from "../../../public/icons/common/ic-close.svg";
@@ -78,13 +78,14 @@ function Header() {
           isScrolled && "pt-2"
         )}
       >
-        <ReactSVG
+        {/* <ReactSVG
           src={companyLogo?.src}
           className={cn(
             "transition-all duration-300 ",
             isScrolled && "  [&_svg]:text-primary"
           )}
-        />
+        /> */}
+        <Image src={companyLogo} alt="company logo"  />
         <div className='flex items-center gap-[30px] xlMax:gap-14 lgMax:gap-10'>
           {headerMenus?.map((menu) => (
             <Typography

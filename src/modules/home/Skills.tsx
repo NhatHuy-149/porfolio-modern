@@ -14,7 +14,12 @@ function Skills() {
             All the skills that I have in that field of work are mentioned.
           </Typography>
           <Typography>
-            I'm a frontend developer with a passion for creating beautiful and functional websites. I'm a quick learner and I'm always looking for new challenges.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo
+            dolores. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
           </Typography>
         </div>
         <div className="w-[50%] xlMax:w-full flex flex-col gap-[20px]">
@@ -30,9 +35,7 @@ function Skills() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5 }}
                 >
-                  <Typography  color="primary">
-                    {skill.percentage}%
-                  </Typography>
+                  <Typography color="primary">{skill.percentage}%</Typography>
                 </motion.div>
               </div>
               <Progress value={skill.percentage} />

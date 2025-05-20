@@ -44,7 +44,7 @@ const Layout = ({ children, description, title = "Nhat Huy Portfolio", keywords 
       {/* <BackToTop /> */}
       {/* <Footer /> */}
       <div className='bg-[#0a101e] flex justify-center pt-[30px] pb-7'>
-        <Typography variant='h5'>© 2025 NhatHuy</Typography>
+        <Typography variant='h5'>© 2020. Designed by Laralink. All right reserved.</Typography>
       </div>
     </div>
   );

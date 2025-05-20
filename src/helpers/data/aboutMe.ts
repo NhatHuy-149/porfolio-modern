@@ -2,9 +2,9 @@ import { AboutMeInterface } from "@/models/home.model";
 
 
 const aboutMeData: AboutMeInterface = {
-  greeting: "Hello, I'm Nhat Huy!",
-  job:"Frontend Developer",
-  introduction: "I'm a frontend developer with a passion for creating beautiful and functional websites. I'm a quick learner and I'm always looking for new challenges.",
+  greeting: "Hi There! I'm Edward Davis",
+  job:"Visual Designer",
+  introduction: "I am a Visual Designer with a strong focus on digital branding. Visul design seeks to attract, inspire, create desires and motivate people to respond to messages, with a view to making a favorable impact.",
   infoDetail: {
     birthday:"14/09/1997",
     phone:"0364051835",

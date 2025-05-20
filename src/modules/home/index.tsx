@@ -20,12 +20,12 @@ function Home() {
     <main >
       <Banner />
       <AboutMe data={aboutMeData}/>
-      {/* <Services data={servicesData}/> */}
-      <TechStack data={techStackData}/>
-      {/* <Skills /> */}
+      <Services data={servicesData}/>
+      {/* <TechStack data={techStackData}/> */}
+      <Skills />
       <Resume data={resumeData}/>
       <Portfolios  data={portfoliosData}  />
-      {/* <Blogs data={blogsData} /> */}
+      <Blogs data={blogsData} />
       <Contact data={contactData} />
     </main>
   );

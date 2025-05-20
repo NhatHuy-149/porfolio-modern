@@ -15,21 +15,21 @@ const headerMenus: HeaderMenusInterface[] = [
     label: "about",
     href: PUBLIC_ROUTER?.ABOUT,
   },
-  // {
-  //   key: "services",
-  //   label: "services",
-  //   href: PUBLIC_ROUTER?.SERVICES,
-  // },
   {
-    key: "tech-stack",
-    label: "tech-stack",
-    href: PUBLIC_ROUTER?.TECH_STACK,
+    key: "services",
+    label: "services",
+    href: PUBLIC_ROUTER?.SERVICES,
   },
   // {
-  //   key: "skills",
-  //   label: "skills",
-  //   href: PUBLIC_ROUTER?.SKILLS,
+  //   key: "tech-stack",
+  //   label: "tech-stack",
+  //   href: PUBLIC_ROUTER?.TECH_STACK,
   // },
+  {
+    key: "skills",
+    label: "skills",
+    href: PUBLIC_ROUTER?.SKILLS,
+  },
   {
     key: "resume",
     label: "resume", 
@@ -40,11 +40,11 @@ const headerMenus: HeaderMenusInterface[] = [
     label: "portfolio",
     href: PUBLIC_ROUTER?.PORTFOLIO,
   },
-  // {
-  //   key: "blog",
-  //   label: "blog",
-  //   href: PUBLIC_ROUTER?.BLOG,
-  // },
+  {
+    key: "blog",
+    label: "blog",
+    href: PUBLIC_ROUTER?.BLOG,
+  },
   {
     key: "contact",
     label: "contact",

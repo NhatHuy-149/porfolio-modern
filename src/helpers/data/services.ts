@@ -9,37 +9,37 @@ const servicesData = [
     {
         id: 1,
         title: "Web Development",
-        description: "I design and develop websites and web applications using React, Next.js, and Tailwind CSS.",
+        description: "Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.",
         icon: icSketches,
     },
     {
         id: 2,
         title: "App Development",
-        description: "I design and develop mobile applications using React Native, Expo, and Tailwind CSS.",
+        description: "Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.",
         icon: icUiuxdesign,
     },
     {
         id: 3,
         title: "Product Design",
-        description: "I design and develop websites and web applications using React, Next.js, and Tailwind CSS.",
+        description: "Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.",
         icon: icProductDesign,
     },
     {
         id: 4,
         title: "UI/UX Design",
-        description: "I design and develop websites and web applications using React, Next.js, and Tailwind CSS.",
+        description: "Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.",
         icon: icMotionGraphics,
     },
     {
         id: 5,
         title: "App Design",
-        description: "I design and develop websites and web applications using React, Next.js, and Tailwind CSS.",
+        description: "Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.",
         icon: icAppDesign,
     },
     {
         id: 6,
         title: "Responsive Design",
-        description: "I design and develop websites and web applications using React, Next.js, and Tailwind CSS.",
+        description: "Lorem ipsum dolor sittem ametamn elit, per sed do eiusmoad teimpor sittem elit inuning utsed sittem.",
         icon: icResponsiveDesign,
     },
 ]

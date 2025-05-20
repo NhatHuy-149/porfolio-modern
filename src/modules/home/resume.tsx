@@ -36,7 +36,7 @@ function Resume({ data }: { data: any }) {
                 <div  className="pb-[50px]">
                   {item.description.map((description: string) => (
                     <div key={description} className="flex items-start gap-2">
-                      <Icon name="FaCheck" className="w-4 h-4 text-primary" />
+                      {/* <Icon name="FaCheck" className="w-4 h-4 text-primary" /> */}
                       <Typography
                         key={description}
                         color="tertiary"
